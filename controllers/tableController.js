@@ -1,5 +1,6 @@
 const asyncHandler = require("express-async-handler");
 const Table = require("../models/tableModel");
+const AppError = require("../utils/AppError");
 
 exports.getTables = asyncHandler(async (req, res, next) => {
 
